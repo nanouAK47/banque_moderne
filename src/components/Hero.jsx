@@ -4,13 +4,17 @@ import GetStarted from "./GetStarted";
 
 const Hero = () => {
   return (
-    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+    <section
+      id="home"
+      className={`flex md:flex-row flex-col ${styles.paddingY}`}
+    >
+      <div
+        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+      >
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
-            <span className="text-white">20%</span> Remise pour{" "}
-            <span className="text-white">1 Mois</span> sur votre nouveau compte
+            <span className="text-white">-20%</span> sur votre nouveau compte
           </p>
         </div>
 
@@ -28,14 +32,20 @@ const Hero = () => {
           De paiements
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Notre équipe d'experts utilise une méthodologie pour identifier les cartes de crédit et répondre à vos besoins.
-          Nous examinons les taux annuels en pourcentage et
-          les frais annuels.
+          Notre équipe d'experts utilise une méthodologie pour identifier les
+          cartes de crédit et répondre à vos besoins. Nous examinons les taux
+          annuels en pourcentage et les frais annuels.
         </p>
       </div>
 
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+      <div
+        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
+      >
+        <img
+          src={robot}
+          alt="billing"
+          className="w-[100%] h-[100%] relative z-[5]"
+        />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
